@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="width" val="8"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -19,8 +18,8 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <lib desc="file#bloqueB.circ" name="12"/>
-  <lib desc="file#compuertaFA.circ" name="13"/>
+  <lib desc="file#compuertaFA.circ" name="12"/>
+  <lib desc="file#bloqueB.circ" name="13"/>
   <main name="SUMLAT"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -62,13 +61,11 @@
     <comp lib="0" loc="(100,930)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="A"/>
-      <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(100,970)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="B"/>
-      <a name="radix" val="10unsigned"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(140,920)" name="Splitter">
@@ -94,61 +91,33 @@
       <a name="incoming" val="8"/>
       <a name="spacing" val="9"/>
     </comp>
-    <comp lib="0" loc="(520,1030)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(770,1210)" name="Splitter">
       <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(520,190)" name="Pin">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(850,1210)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S"/>
       <a name="output" val="true"/>
+      <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(520,310)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(520,430)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(520,550)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(520,670)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(520,790)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(520,910)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="12" loc="(1320,360)" name="BloqueB"/>
-    <comp lib="12" loc="(1320,830)" name="BloqueB"/>
-    <comp lib="12" loc="(1740,590)" name="BloqueB"/>
-    <comp lib="12" loc="(920,230)" name="BloqueB"/>
-    <comp lib="12" loc="(920,470)" name="BloqueB"/>
-    <comp lib="12" loc="(920,710)" name="BloqueB"/>
-    <comp lib="12" loc="(930,950)" name="BloqueB"/>
-    <comp lib="13" loc="(510,1030)" name="FAGP"/>
-    <comp lib="13" loc="(510,190)" name="FAGP"/>
-    <comp lib="13" loc="(510,310)" name="FAGP"/>
-    <comp lib="13" loc="(510,430)" name="FAGP"/>
-    <comp lib="13" loc="(510,550)" name="FAGP"/>
-    <comp lib="13" loc="(510,670)" name="FAGP"/>
-    <comp lib="13" loc="(510,790)" name="FAGP"/>
-    <comp lib="13" loc="(510,910)" name="FAGP"/>
+    <comp lib="12" loc="(510,1030)" name="FAGP"/>
+    <comp lib="12" loc="(510,190)" name="FAGP"/>
+    <comp lib="12" loc="(510,310)" name="FAGP"/>
+    <comp lib="12" loc="(510,430)" name="FAGP"/>
+    <comp lib="12" loc="(510,550)" name="FAGP"/>
+    <comp lib="12" loc="(510,670)" name="FAGP"/>
+    <comp lib="12" loc="(510,790)" name="FAGP"/>
+    <comp lib="12" loc="(510,910)" name="FAGP"/>
+    <comp lib="13" loc="(1320,360)" name="BloqueB"/>
+    <comp lib="13" loc="(1320,830)" name="BloqueB"/>
+    <comp lib="13" loc="(1740,590)" name="BloqueB"/>
+    <comp lib="13" loc="(920,230)" name="BloqueB"/>
+    <comp lib="13" loc="(920,470)" name="BloqueB"/>
+    <comp lib="13" loc="(920,710)" name="BloqueB"/>
+    <comp lib="13" loc="(930,950)" name="BloqueB"/>
     <wire from="(100,930)" to="(140,930)"/>
     <wire from="(100,970)" to="(190,970)"/>
     <wire from="(1080,330)" to="(1080,360)"/>
@@ -254,24 +223,40 @@
     <wire from="(510,190)" to="(520,190)"/>
     <wire from="(510,210)" to="(590,210)"/>
     <wire from="(510,230)" to="(570,230)"/>
-    <wire from="(510,310)" to="(520,310)"/>
+    <wire from="(510,310)" to="(530,310)"/>
     <wire from="(510,330)" to="(570,330)"/>
     <wire from="(510,350)" to="(590,350)"/>
-    <wire from="(510,430)" to="(520,430)"/>
+    <wire from="(510,430)" to="(540,430)"/>
     <wire from="(510,450)" to="(590,450)"/>
     <wire from="(510,470)" to="(570,470)"/>
-    <wire from="(510,550)" to="(520,550)"/>
+    <wire from="(510,550)" to="(550,550)"/>
     <wire from="(510,570)" to="(570,570)"/>
     <wire from="(510,590)" to="(590,590)"/>
-    <wire from="(510,670)" to="(520,670)"/>
+    <wire from="(510,670)" to="(550,670)"/>
     <wire from="(510,690)" to="(590,690)"/>
     <wire from="(510,710)" to="(570,710)"/>
-    <wire from="(510,790)" to="(520,790)"/>
+    <wire from="(510,790)" to="(540,790)"/>
     <wire from="(510,810)" to="(570,810)"/>
     <wire from="(510,830)" to="(590,830)"/>
-    <wire from="(510,910)" to="(520,910)"/>
+    <wire from="(510,910)" to="(530,910)"/>
     <wire from="(510,930)" to="(590,930)"/>
     <wire from="(510,950)" to="(570,950)"/>
+    <wire from="(520,1030)" to="(520,1290)"/>
+    <wire from="(520,1290)" to="(750,1290)"/>
+    <wire from="(520,80)" to="(520,190)"/>
+    <wire from="(520,80)" to="(650,80)"/>
+    <wire from="(530,1280)" to="(750,1280)"/>
+    <wire from="(530,90)" to="(530,310)"/>
+    <wire from="(530,90)" to="(640,90)"/>
+    <wire from="(530,910)" to="(530,1280)"/>
+    <wire from="(540,100)" to="(540,430)"/>
+    <wire from="(540,100)" to="(630,100)"/>
+    <wire from="(540,1270)" to="(750,1270)"/>
+    <wire from="(540,790)" to="(540,1270)"/>
+    <wire from="(550,110)" to="(550,550)"/>
+    <wire from="(550,110)" to="(620,110)"/>
+    <wire from="(550,1260)" to="(750,1260)"/>
+    <wire from="(550,670)" to="(550,1260)"/>
     <wire from="(570,1010)" to="(570,1050)"/>
     <wire from="(570,1010)" to="(710,1010)"/>
     <wire from="(570,230)" to="(570,270)"/>
@@ -304,6 +289,14 @@
     <wire from="(590,790)" to="(700,790)"/>
     <wire from="(590,930)" to="(590,970)"/>
     <wire from="(590,970)" to="(710,970)"/>
+    <wire from="(620,110)" to="(620,1250)"/>
+    <wire from="(620,1250)" to="(750,1250)"/>
+    <wire from="(630,100)" to="(630,1240)"/>
+    <wire from="(630,1240)" to="(750,1240)"/>
+    <wire from="(640,1230)" to="(750,1230)"/>
+    <wire from="(640,90)" to="(640,1230)"/>
+    <wire from="(650,1220)" to="(750,1220)"/>
+    <wire from="(650,80)" to="(650,1220)"/>
     <wire from="(680,470)" to="(680,590)"/>
     <wire from="(680,470)" to="(700,470)"/>
     <wire from="(680,590)" to="(1340,590)"/>
@@ -316,6 +309,7 @@
     <wire from="(690,230)" to="(700,230)"/>
     <wire from="(690,950)" to="(690,1070)"/>
     <wire from="(690,950)" to="(710,950)"/>
+    <wire from="(770,1210)" to="(850,1210)"/>
     <wire from="(920,170)" to="(920,230)"/>
     <wire from="(920,250)" to="(940,250)"/>
     <wire from="(920,270)" to="(980,270)"/>
